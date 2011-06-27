@@ -1,0 +1,63 @@
+//
+//  ProductThumbnailView.h
+//  La Redoute
+//
+//  Created by REDCATSOT on 9/20/10.
+//  Copyright 2010 RedCats USA, Inc. All rights reserved.
+//
+
+//#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+
+@class IconDownloader;
+@class DimensionValue;
+//@class DimensionsView;
+@class DimensionsTableView;
+@class Analytics;
+@class SecondLevelCategoryView;
+@class SearchCatalogView;
+
+@interface ProductThumbnailView : BaseViewController
+{}
+@property(nonatomic, retain) IBOutlet UILabel *longTitleLabel;
+@property(nonatomic, retain) IBOutlet UITableView *tableView;
+@property(nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property(nonatomic, retain) IBOutlet UIView *overlay;
+@property(nonatomic, retain) IBOutlet UIButton *brandBtn;
+@property(nonatomic, retain) IBOutlet UILabel *brandSelectionLabel;
+@property(nonatomic, retain) IBOutlet UIButton *closeOverlayXButton;
+@property(nonatomic, retain) IBOutlet UIButton *colorBtn;
+@property(nonatomic, retain) IBOutlet UILabel *colorSelectionLabel;
+@property(nonatomic, retain) IBOutlet UIView *overlayBlackView;
+@property(nonatomic, retain) IBOutlet UIView *overlayWorkingView;
+@property(nonatomic, retain) IBOutlet UILabel *overlayTitle;
+@property(nonatomic, retain) IBOutlet UIButton *priceBtn;
+@property(nonatomic, retain) IBOutlet UILabel *priceSelectionLabel;
+@property(nonatomic, retain) IBOutlet UIButton *ratingsBtn;
+@property(nonatomic, retain) IBOutlet UILabel *ratingsSelectionLabel;
+@property(nonatomic, retain) IBOutlet UIButton *resetSelectionsButton;
+@property(nonatomic, retain) IBOutlet UIImageView *shortBackground;
+@property(nonatomic, retain) IBOutlet UIButton *sizeBtn;
+@property(nonatomic, retain) IBOutlet UILabel *sizeSelectionLabel;
+@property(nonatomic, retain) IBOutlet UIImageView *tallBackground;
+
+@property(nonatomic, retain) IBOutlet DimensionsTableView *dimenTableView;
+
+- (IBAction)BrandsButton:(id)sender;
+- (IBAction)colorButton:(id)sender;
+- (IBAction)priceButton:(id)sender;
+- (IBAction)ratingButton:(id)sender;
+- (IBAction)sizeButton:(id)sender;
+
+- (IBAction)closeOverlayAction:(id)sender;
+//- (IBAction)closeDimenAction:(id)sender;
+
+- (IBAction)cancelBrandSelection:(id)sender;
+- (IBAction)cancelColorSelection:(id)sender;
+- (IBAction)cancelPriceSelection:(id)sender;
+- (IBAction)cancelRatingSelection:(id)sender;
+- (IBAction)cancelSizeSelection:(id)sender;
+
+- (IBAction)resetSelections:(id)sender;
+
+@end

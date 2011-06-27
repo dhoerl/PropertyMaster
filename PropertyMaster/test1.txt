@@ -1,0 +1,7 @@
+@interface Foo ()
+
+@property (nonatomic, retain) UIView *view;
+@property (nonatomic) int foo_ext;
+@property (nonatomic) UIView * goop;
+
+@end

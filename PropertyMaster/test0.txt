@@ -1,0 +1,40 @@
+@class Foo;
+@protocol Goo;
+
+@protocol FOOPER
+
+@end
+
+
+
+
+@interface Foo : Goop < blah, blah, blah>
+{
+	@public	
+		int foo;
+		id <blapProtocol, someOtherProtocol, foopProtocol> delegate;
+	@private;
+		id <blapProtocol, someDelegateProtocol, foopProtocol> gooper;
+	@protected
+		UIWebView * goop;
+		IBOutlet UIWebView *someView;
+		NSURLConnection *conn;
+}
+@property int fooper;
+@property (nonatomic, retain) UIView * goopDelegate;
+@end
+
+
+
+
+@interface Foo : Goop
+{
+}
+
+@property (nonatomic, retain) NSXMLParser * parser;
+
+@property (nonatomic, retain) UIView * goopDelegate0;
+@property (nonatomic, retain) UIView * goopDelegate1;	// delegate
+@property (nonatomic, retain) DelegateToMe UIView * goopDelegate2;
+@property (nonatomic, retain) DelegatesToMe(foop, fromp, glomp)  UIView * goopDelegate3;
+@end

@@ -1,0 +1,7 @@
+{
+	int foo;
+}
+@property (nonatomic, retain) id <WebDelegate> gooper;
+@property (nonatomic, retain) IBOutlet UIWebView *view;
+@property (nonatomic, retain) NSURLConnection *conn;
+@property (nonatomic, retain) NSXMLParser *parser;

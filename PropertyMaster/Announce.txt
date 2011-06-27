@@ -1,0 +1,18 @@
+[ANN] PropertyMaster(TM): customizable Xcode script to create, cleanup, and maintain properties-synthesize-viewDidUnload-dealloc
+
+Announcing Version 1.0 of the PropertyMaster Xcode script (and Automator Service) to assist iOS (and to a lesser extent, Cocoa) developers convert existing ivar based code to all properties.
+
+Once installed as an Xcode 3 script (or as a Service for Xcode 4), you can select interface files containing both ivars and properties, and convert any ivars to properties, allowing you to subsequently delete all ivars. It pastes one large text blob on the clipboard, you can paste it back into both the interface and implementation file and ordered and classified synthesize lines, a viewDidUnload and dealloc method. It also lets you select and process a class extension containing properties, and regenerates a merged blob.
+
+In addition, it has a highly customizable system to identify weak ivars, and to produce final "close" statements prior to a release (ie, foo.delegate = nil, [foo release];)
+
+A Readme file containing detailed usage and installation information, the PDP script itself, and an Automator based Service can all be found in the PropertyMaster folder on public.me.com/dhoerl. The script is open source with a liberal license. Please send bug reports and suggestions to the author.
+
+Also, the Xcode project used to test during development is there too.
+
+NOTE: I developed this script for my own use. I am currently working on iOS files that a half dozen people have touched, with about half the properties backed by ivars. The script actually turned up the fact that some ivars were misspelled! On a as-time-permits, I have been removing all ivars, then moving as many properties (and methods) as possible to class extensions. The resulting interface files are much smaller and expose only those interfaces that should be used by other classes.
+
+The only possible downside I can see to removing the ivars are that subclass usage must use the "self.property" form, which many knowledgeable people have said should have been used in the first place!
+
+David Hoerl
+dhoerl at mac dot com

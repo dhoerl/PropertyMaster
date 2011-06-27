@@ -1,0 +1,51 @@
+@interface ProductThumbnailView ()
+@property(nonatomic, retain) NSString *Keyword;
+@property(nonatomic, retain) NSString *CategoryId;
+@property(nonatomic, retain) NSString *CategoryTitle;
+@property(nonatomic, retain) NSString *MinimumPrice;
+@property(nonatomic, retain) DimensionValue *dimensionValue;
+@property(nonatomic, retain) NSMutableDictionary *imageDownloadsInProgress;
+@property(nonatomic, retain) IconDownloader *iconDownloader;
+@property(nonatomic, retain) NSMutableArray *productsList;
+@property(nonatomic, retain) DimensionValue *brandSelection;
+@property(nonatomic, retain) DimensionValue *colorSelection;
+@property(nonatomic, retain) DimensionValue *priceSelection;
+@property(nonatomic, retain) DimensionValue *ratingSelection;
+@property(nonatomic, retain) DimensionValue *sizeSelection;
+@property(nonatomic, retain) NSArray *dimensionsList;
+@property(nonatomic, assign) BOOL categoryIdChanged;
+@property(nonatomic, assign) int brandCount;
+@property(nonatomic, assign) int colorCount;
+@property(nonatomic, assign) int priceCount;
+@property(nonatomic, assign) int ratingsCount;
+@property(nonatomic, assign) int sizeCount;
+@property(nonatomic, assign) BOOL firstTimeAppearedAfterLoad;
+@property(nonatomic, assign) BOOL isProcessingRefreshThumbnails;
+@property(nonatomic, assign) BOOL shuttingDown;
+@property(nonatomic, assign) NSInteger loadImgNum;
+
+- (BOOL)haveDimensionsToFilter;
+- (void)setupButton:(UIButton*)btn title:(NSString*)title selection:(DimensionValue *)selection label:(UILabel*)selectionLabel;
+
+- (void)showDimensionTableOverlay:(NSString*)dimenTitle;
+- (void)showDimensionOverlayUsingString:(NSString*)dimenTitle;
+
+- (void)rotateConfView:(UIInterfaceOrientation) orientation;
+
+- (NSMutableString *)applyFilterIds:(NSString *)preFilter;
+- (BOOL)refreshThumbnails;
+
+- (void)showFilterConfirmation;
+- (void)getMissingImages;
+- (void)startIconDownload:(Product *)product forIndexPath:(NSIndexPath *)indexPath;
+
+- (void)downloadIconInBackground;
+
+- (void)hideRefinements:(BOOL)hide;
+
+- (IBAction)filterButton:(id)sender;	// set in code, still an action
+- (void)addRefineButton;
+
+- (void) doAnalyticsWork;
+
+@end

@@ -1,0 +1,15 @@
+/*
+int ivGoop, *ivGooper, ivGlop;
+   IBOUTLET    UIView *iView,    *iView2 ;
+
+// some comment
+}
+
+//@property(nonatomic , assign,readonly,fffff ) id <whacko> fooper, *gooper, looper ; // comment
+//@property( nonatomic, readonly, goop) UIImage *foo, *goo, * poo /* some comment */ ; // final comment
+//@property ( nonatomic , assign,readonly,fffff ) int fooper   , *gooper2   , looper ;
+// @property       (readonly,nonatomic)     int grunge ;
+@property(nonatomic) IBOUTLET UILabel *good ; // A good example
+@property   int stupid ;
+@property  (nonatomic)  id someId ;
+*/

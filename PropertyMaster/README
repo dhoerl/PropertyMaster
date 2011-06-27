@@ -1,0 +1,211 @@
+	foreach($argv as $val) {
+		switch($val) {
+		case "-propInitialSpace":
+			$outputSpaceAfterProperty = 1;
+			break;
+		case "-propSpaces":
+			$outputPropertySpaces = 0;
+			break;
+		}
+	}
+
+
+
+// Stop the script giving time out errors..
+    set_time_limit(0);
+
+    // This opens standard in ready for interactive input..
+    define('STDIN',fopen("php://stdin","r"));
+
+    // Main event loop to capture top level command..
+    while(!0)
+    {
+        
+        // Print out main menu..
+        echo "Select an option..\n\n";
+        echo "    1) Do this\n";
+        echo "    2) Do this\n";
+        echo "    3) Do this\n";
+        echo "    x) Exit\n";
+
+        // Decide what menu option to select based on input..
+        switch(trim(fgets(STDIN,256)))
+
+---
+
+function show_home_directory() {
+    # works from CLI and in web browser:
+    echo getenv("HOME"). "<br>\n";
+
+    # only via http
+    global $HTTP_ENV_VARS;
+    echo $HTTP_ENV_VARS["HOME"] . "<br>\n";
+  }
+
+  show_home_directory();
+ ?>
+ 
+ 
+ for($i=0; $i<$argc; ++$i) {
+	$readArg = "$argv[$i]\n" ;
+}
+
+
+
+
+
+
+
+{
+	Product *product;
+	UILabel *merchandisesubtotalValue;
+	UILabel *TtlPrice;
+	UITableView *tableView;
+	NSString *productImage;
+	int currentIndex;
+	int sizeIndex;
+	
+	UILabel *codeOfferLabel;
+	UITextField *codeOfferTextField;
+	UILabel *merchandisesubtotal;
+	//UILabel *label1;
+	//UILabel *label1Text;
+	UILabel *shippingValue;
+	UILabel *shippingText;
+	UILabel *ttlPriceText;
+	UIButton *chkoutButton;
+	UIButton *shoppingButton;
+	UIView *emptyView;
+	
+	UIView *detailView;
+	UILabel *emptyBasketLabel;
+	
+	NSString *priceString;
+	
+	Basket * localBasket;
+	NSMutableData *netData;
+	UIButton *promoValidation;
+	NSString *promoDiscount;
+	float promotion;
+	
+	UILabel *taxText;
+	UILabel *taxValue;
+	UILabel *priceAfterCpnText;
+	UILabel *priceAfterCpnValue;
+	UILabel *reductionText;
+	UILabel *reductionValue;
+	UILabel *heavyFeesValue;
+	UILabel *heavyFeesText;
+	
+	float shippingPrice;
+	float priceBeforeCoupon;
+	float priceAfterCoupon;
+	float finalPrice;
+	float productReductionValue;
+	float productReductionPercentage;
+	
+	UIView *promotionCodeView;
+	UIView *promotionCodeTermsandconditions;	
+	UITextView *promotionCodeTermsandconditionstext;
+	UILabel *promotionCode;
+	UIButton *promoDelete;
+    UILabel *lineLabel;
+    
+	BOOL showedLogin;
+	BOOL heavyItem;
+	
+	int descriptionFinder;
+	int backOrderCount;
+	int inStock;
+	int outOfStockCount;
+	int currentBasketProductCount;
+	CGFloat y;
+	NSURLConnection *conn;
+	
+	NSString *couponTextField;
+	BOOL discount;
+	
+	UIView *couponEntryView;
+	NSDictionary *coupon;
+	NSMutableArray *stockArrays;
+}
+@property(nonatomic, retain) IBOutlet UIView *promotionCodeView;
+@property(nonatomic, retain) IBOutlet UIView *promotionCodeTermsandconditions;
+@property(nonatomic, retain) IBOutlet UITextView *promotionCodeTermsandconditionstext;
+@property(nonatomic, retain) IBOutlet UILabel *promotionCode;
+@property(nonatomic, retain) IBOutlet UIButton *promoDelete;
+@property(nonatomic, retain) IBOutlet UILabel *merchandisesubtotalValue;
+@property(nonatomic, retain) IBOutlet UILabel *TtlPrice;
+@property(nonatomic, retain) IBOutlet UITableView *tableView;
+@property(nonatomic, retain) IBOutlet UILabel *codeOfferLabel;
+@property(nonatomic, retain) IBOutlet UITextField *codeOfferTextField;
+@property(nonatomic, retain) IBOutlet UILabel *merchandisesubtotal;
+@property(nonatomic, retain) UILabel *heavyFeesValue;
+@property(nonatomic, retain) UILabel *heavyFeesText;
+@property(nonatomic, retain) NSString *couponTextField;
+@property(nonatomic, retain) IBOutlet UIView *couponEntryView;
+@property(nonatomic, retain) Product *product;
+@property(nonatomic, retain) Basket *localBasket;
+@property(nonatomic, retain) NSString *productImage;
+@property(nonatomic, retain) NSString *priceString;
+@property(nonatomic, retain) NSMutableData *netData;
+@property(nonatomic, retain) NSDictionary *coupon;
+@property(nonatomic, retain) NSMutableArray *stockArrays;
+@property(nonatomic, retain) IBOutlet UILabel *shippingValue;
+@property(nonatomic, retain) IBOutlet UILabel *shippingText;
+@property(nonatomic, retain) IBOutlet UILabel *ttlPriceText;
+@property(nonatomic, retain) IBOutlet UIButton *chkoutButton;
+@property(nonatomic, retain) IBOutlet UIButton *shoppingButton;
+@property(nonatomic, retain) IBOutlet UIView *emptyView;
+@property(nonatomic, retain) IBOutlet UIView *detailView;
+@property(nonatomic, retain) IBOutlet UILabel *emptyBasketLabel;
+@property(nonatomic, retain) IBOutlet UILabel *lineLabel;
+@property(nonatomic, retain) IBOutlet UIButton *promoValidation;
+@property(nonatomic, retain) IBOutlet UILabel *taxText;
+@property(nonatomic, retain) IBOutlet UILabel *taxValue;
+@property(nonatomic, retain) IBOutlet UILabel *priceAfterCpnText;
+@property(nonatomic, retain) IBOutlet UILabel *priceAfterCpnValue;
+@property(nonatomic, retain) IBOutlet UILabel *reductionText;
+@property(nonatomic, retain) IBOutlet UILabel *reductionValue;
+@property(nonatomic, copy) NSString *promoDiscount;
+@property(nonatomic) BOOL showedLogin;
+@property(nonatomic, assign) BOOL heavyItem;
+@property(nonatomic) int currentIndex;
+@property(nonatomic) int sizeIndex;
+
+@property(nonatomic) struct foo fong;
++ (gooper *)flung:(gooper *)ump;
+@property(nonatomic) union foo glong;
+- (gooper *)flung:(gooper *)ump;
+@property(nonatomic) enum foo xlong;
+
+
+@interface Foo : Goop < blah, blah, blah>
+{
+	@public	
+		int foo;
+	@private;
+		id gooper;
+	@protected
+		UIView * goop;
+		IBOutlet UITextView *someView;
+}
+@property int fooper;
+
+
+@end
+
+@interface Foo ()
+
+@property (nonatomic, retain) UIView *view;
+@property (nonatomic) int foo_ext;
+@property (nonatomic) UIView * goop;
+
+@end
+
+
+
+
+
+
+
